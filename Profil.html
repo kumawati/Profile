@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+            text-align: center;
+        }
+
+        .main-header {
+            background: linear-gradient(135deg, #0f766e, #14b8a6);
+            color: white;
+            padding: 30px 20px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+
+        .main-header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Wadah Kartu Profil */
+        .profile-card {
+            background-color: white;
+            max-width: 350px;
+            margin: 30px auto;
+            padding: 30px 20px;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Mengatur Gambar Profil Agar Bulat */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #14b8a6;
+            margin-bottom: 15px;
+        }
+
+        .profile-card h2 {
+            margin: 10px 0 5px 0;
+            font-size: 20px;
+            color: #0f766e;
+        }
+
+        .profile-card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        /* Tombol Kembali ke Halaman Utama */
+        .btn-back {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #0f766e;
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 12px;
+            transition: background 0.2s;
+        }
+
+        .btn-back:active {
+            background-color: #115e59;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-header">
+        <h1>👤 Profil Pengembang</h1>
+    </div>
+
+    <div class="profile-card">
+        <!-- 1. FOTO PROFIL -->
+        <!-- Ganti "foto-kamu.jpg" dengan nama file gambar yang sudah kamu upload ke GitHub -->
+        <img src="foto-kamu.jpg" alt="Foto Profil" class="profile-img">
+
+        <!-- 2. BIODATA (Silakan ganti teks di bawah ini dengan data dirimu) -->
+        <h2>Riska Kusumawati</h2>
+        <p><strong>Pekerjaan/Status:</strong> Mahasiswa IT</p>
+        <p><strong>Keahlian:</strong> Web Development & Desain Media</p>
+        <p style="margin-top: 15px; font-style: italic;">"Tetap belajar dan terus berkarya demi masa depan yang lebih baik."</p>
+        
+        <!-- 3. TOMBOL KEMBALI -->
+        <a href="index.html" class="btn-back">⬅ Kembali ke Menu</a>
+    </div>
+
+</body>
+</html>
 
