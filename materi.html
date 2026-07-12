@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pembelajaran</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+            text-align: center;
+        }
+
+        .main-header {
+            background: linear-gradient(135deg, #0f766e, #14b8a6);
+            color: white;
+            padding: 30px 20px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+
+        .main-header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Wadah untuk daftar materi */
+        .content-container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: left; /* Teks penjelasan materi rata kiri agar rapi dibaca */
+        }
+
+        /* Kotak Kartu Materi */
+        .materi-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .materi-card h3 {
+            margin: 0 0 8px 0;
+            color: #0f766e;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .materi-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #475569;
+            line-height: 1.5;
+        }
+
+        /* Tombol Kembali */
+        .btn-back {
+            display: inline-block;
+            margin: 20px 0 40px 0;
+            background-color: #0f766e;
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 12px;
+        }
+
+        .btn-back:active {
+            background-color: #115e59;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-header">
+        <h1>📚 Materi Pembelajaran</h1>
+    </div>
+
+    <div class="content-container">
+        
+        <!-- KARTU MATERI 1 (Silakan ganti judul dan isinya sesuai topikmu) -->
+        <div class="materi-card">
+            <h3>📖 01. Judul Materi Pertama</h3>
+            <p>Tuliskan penjelasan singkat atau rangkuman materi pertama kamu di sini. Kamu bisa memasukkan teks, definisi, atau poin-poin penting yang ingin dipelajari oleh pengguna.</p>
+        </div>
+
+        <!-- KARTU MATERI 2 -->
+        <div class="materi-card">
+            <h3>📖 02. Judul Materi Kedua</h3>
+            <p>Tuliskan penjelasan untuk materi kedua di sini. Jika materi kamu panjang, pembagian menggunakan kartu seperti ini akan membuat pembaca tidak cepat bosan.</p>
+        </div>
+
+        <!-- KARTU MATERI 3 (Bisa ditambah lagi ke bawah jika kurang) -->
+        <div class="materi-card">
+            <h3>📖 03. Judul Materi Ketiga</h3>
+            <p>Isi penjelasan materi ketiga kamu di sini. Pastikan bahasanya mudah dipahami dan interaktif.</p>
+        </div>
+
+        <!-- TOMBOL KEMBALI KE HALAMAN UTAMA -->
+        <div style="text-align: center;">
+            <a href="index.html" class="btn-back">⬅ Kembali ke Menu</a>
+        </div>
+        
+    </div>
+
+</body>
+</html>
 
