@@ -3,94 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar Multimedia Interaktif</title>
+    <title>Media Pembelajaran Digital</title>
     <style>
-        /* Mengatur tampilan dasar halaman */
+        /* Mengatur dasar halaman dengan konsep minimalis modern */
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #eef7ff; /* Warna latar belakang biru sangat muda */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc; /* Warna latar belakang abu-abu terang yang bersih */
+            color: #334155;
             text-align: center;
         }
 
-        /* Bagian Header (Kotak Biru Atas) */
-        .header {
-            background-color: #004aad; /* Warna biru tua */
+        /* Bagian Header dengan Gradasi Warna Teal/Hijau Toska Modern */
+        .main-header {
+            background: linear-gradient(135deg, #0f766e, #14b8a6); 
             color: white;
-            padding: 20px 10px;
+            padding: 40px 20px;
+            border-bottom-left-radius: 24px; /* Membuat sudut bawah melengkung elegan */
+            border-bottom-right-radius: 24px;
+            box-shadow: 0 4px 15px rgba(15, 118, 110, 0.15);
         }
-        .header h1 {
+        .main-header h1 {
             margin: 0;
-            font-size: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
+            font-size: 24px;
+            letter-spacing: 0.5px;
         }
-        .header p {
-            margin: 5px 0 0 0;
-            font-size: 11px;
+        .main-header p {
+            margin: 8px 0 0 0;
+            font-size: 13px;
             opacity: 0.9;
         }
 
-        /* Wadah untuk tombol-tombol menu */
-        .menu-container {
-            background-color: #f4f9fd; /* Latar belakang area tombol */
-            padding: 25px 10px;
+        /* Wadah untuk tombol menu */
+        .navigation-grid {
+            padding: 40px 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Membagi menu menjadi 2 kolom grid yang rapi */
+            gap: 16px; /* Jarak antar tombol */
+        }
+
+        /* Gaya untuk Tombol Baru berbentuk Kotak Melengkung Modern (Card Style) */
+        .menu-card {
+            background-color: white;
+            color: #0f766e;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 20px 10px;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
             display: flex;
-            justify-content: center;
-            gap: 10px; /* Jarak antar tombol */
-            flex-wrap: wrap; /* Agar tombol otomatis turun jika layar HP kekecilan */
-        }
-
-        /* Gaya untuk Tombol (Button) */
-        .btn {
-            background-color: #ff9800; /* Warna orange */
-            color: white;
-            text-decoration: none; /* Menghilangkan garis bawah tautan */
-            font-size: 11px;
-            font-weight: bold;
-            padding: 8px 16px;
-            border-radius: 20px; /* Membuat sudut tombol melengkung lonjong */
-            display: inline-flex;
+            flex-direction: column;
             align-items: center;
-            gap: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         }
 
-        /* Bagian Garis Biru/Footer di bawah menu */
-        .footer-bar {
-            background-color: #004aad;
-            color: white;
-            font-size: 10px;
-            padding: 8px 0;
+        /* Efek saat tombol ditekan/disentuh */
+        .menu-card:active {
+            background-color: #f1f5f9;
+            transform: scale(0.98);
+        }
+
+        /* Icon Emoji diperbesar sedikit */
+        .menu-card span {
+            font-size: 22px;
+        }
+
+        /* Footer bawah yang simpel */
+        .simple-footer {
+            margin-top: 40px;
+            font-size: 11px;
+            color: #94a3b8;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
 
-    <!-- 1. Bagian Header Atas -->
-    <div class="header">
-        <h1>🎓 Belajar Multimedia Interaktif</h1>
-        <p>Belajar dengan mudah, menarik, dan interaktif.</p>
+    <!-- 1. Header Atas (Konsep Baru: Rounded Gradient) -->
+    <div class="main-header">
+        <h1>🚀 Media Pembelajaran Interaktif</h1>
+        <p>Eksplorasi materi pembelajaran secara mandiri dan terstruktur.</p>
     </div>
 
-    <!-- 2. Bagian Tombol Menu -->
-    <div class="menu-container">
-        <a href="Materi.html" class="btn">📚 Materi</a>
-        <a href="Profil.html" class="btn">👤 Profil</a>
-        <a href="Kuis.html" class="btn">📝 Kuis</a>
-        <a href="Kontak.html" class="btn">📞 Kontak</a>
+    <!-- 2. Menu Utama (Konsep Baru: 2x2 Grid Layout) -->
+    <div class="navigation-grid">
+        <a href="Materi.html" class="menu-card">
+            <span>📚</span> Materi
+        </a>
+        <a href="Profil.html" class="menu-card">
+            <span>👤</span> Profil
+        </a>
+        <a href="Visi.html" class="menu-card">
+            <span>🎯</span> Visi
+        </a>
+        <a href="Misi.html" class="menu-card">
+            <span>📌</span> Misi
+        </a>
     </div>
 
-    <!-- 3. Bagian Garis Biru Bawah -->
-    <div class="footer-bar">
-        © 2026 Belajar Multimedia
+    <!-- 3. Footer Bawah -->
+    <div class="simple-footer">
+        © 2026 Pengembangan Media Interaktif
     </div>
 
 </body>
 </html>
+
 
 
 
